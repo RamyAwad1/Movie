@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import axios from "axios"
-import { Link } from "react-router-dom";
+import cinemaImage from "../assets/Cinema.png"
 
 
 
@@ -18,8 +18,12 @@ function Home() {
     return (
 
         <>
-            <h1 style={{ textAlign: "center", padding: "15px" }}>Welcome to the world of movies</h1>
-            <ul>
+            <div style={{textAlign: "center"}}>
+                <h1 style={{ textAlign: "center", padding: "15px" }}>Welcome to the world of movies</h1>
+                <img src={cinemaImage} alt="" />
+            </div>
+
+            {/* <ul>
                 {movies.map((movie) => {
                     return (
                         <li key={movie.id}>
@@ -34,7 +38,7 @@ function Home() {
                     )
                 }
                 )}
-            </ul>
+            </ul> */}
 
         </>
     )
