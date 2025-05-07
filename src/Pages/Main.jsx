@@ -17,12 +17,12 @@ function Home() {
     return (
 
         <>
-            <h1 style={{ textAlign: "center", padding: "15px" }}>Trending movies</h1>
+            <h1 style={{ textAlign: "center", padding: "15px" }}>Welcome to the world of movies</h1>
             <ul>
                 {movies.map((movie) => {
                     return (
                         <li key={movie.id}>
-                            <div>
+                            <div style={{textAlign:"center"}}>
                                 <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
                                     alt={movie.title} />
                                 <br />
