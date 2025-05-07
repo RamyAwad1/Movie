@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import axios from "axios"
+import { Link } from "react-router-dom";
 
 
 
@@ -22,12 +23,13 @@ function Home() {
                 {movies.map((movie) => {
                     return (
                         <li key={movie.id}>
-                            <div style={{textAlign:"center"}}>
+                            <Link to={`/movies/${movie.id}`} style={{ textAlign: "center", display: 'block', textDecoration: 'none', color: 'black' }}>
+
                                 <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
                                     alt={movie.title} />
                                 <br />
                                 <p>{movie.title}</p>
-                            </div>
+                            </Link>
                         </li>
                     )
                 }

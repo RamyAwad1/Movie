@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './Components/Navagation';
 import Footer from './Components/Footer';
 import Movies from './Pages/Movies';
-
+import MovieDetails from './Pages/MovieDetails';
 
 
 
@@ -21,6 +21,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/movies" element={<Movies />} />
+          <Route path="/movies/:id" element={<MovieDetails />} />
         </Routes>
       </main>
       <Footer />
