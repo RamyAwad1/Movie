@@ -4,6 +4,8 @@ import Main from './Pages/Main';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './Components/Navagation';
 import Footer from './Components/Footer';
+import Movies from './Pages/Movies';
+
 
 
 
@@ -15,10 +17,10 @@ function App() {
 
     <Router>
        <Navbar />
-       {/* <Link to="/movies" >Movies</Link> */}
       <main>
         <Routes>
           <Route path="/" element={<Main />} />
+          <Route path="/movies" element={<Movies />} />
         </Routes>
       </main>
       <Footer />
